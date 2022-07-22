@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#display clock
+
+n1=0
+n2=0
+while [ $n1 -le 12 ]
+do
+	while [ $n2 -le 59 ]
+	do
+		echo "$n2"
+		if [ $n2 -eq 58 ]
+		then
+			echo "$n1"
+		fi
+		((n2++))
+	done
+	((n1++))
+done

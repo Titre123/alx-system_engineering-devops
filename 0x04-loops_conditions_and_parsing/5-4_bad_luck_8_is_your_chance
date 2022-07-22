@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+#display bad luvk in 4, good luck in 8, Best School in th rest
+
+n=0
+while [ $n -le 10 ]
+do
+	if [ $n -eq 3 ]
+	then
+		echo "bad luck"
+	elif [ $n -eq 7 ]
+	then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	((n++))
+done
+	
