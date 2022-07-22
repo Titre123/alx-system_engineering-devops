@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times
 
-n=1
-while [ $n -gt 10 ]
+COUNTER=0
+while [ $COUNTER -lt 10 ]
 do
-	echo "Best School"
-	let n=((n+1))
+    echo "Holberton School"
+    let COUNTER=COUNTER+1
 done
