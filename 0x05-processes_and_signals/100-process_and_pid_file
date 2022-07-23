@@ -2,7 +2,7 @@
 #create /var/run/myscript.pid
 sudo touch /var/run/myscript.pid
 #containing its PID
-sudo bash -c echo "$$" > /var/run/myscript.pid
+sudo bash -c 'echo "$$" > /var/run/myscript.pid'
 #Displays To infinity and beyond
 while true
 do
