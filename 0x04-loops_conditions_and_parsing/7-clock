@@ -1,18 +1,15 @@
 #!/usr/bin/env bash
 #display clock
 
-n1=0
-n2=0
-while [ $n1 -le 12 ]
+HOURS=0
+while [ $HOURS -lt 13 ]
 do
-	while [ $n2 -le 59 ]
-	do
-		echo "$n2"
-		if [ $n2 -eq 58 ]
-		then
-			echo "$n1"
-		fi
-		((n2++))
-	done
-	((n1++))
+    echo "Hour: $HOURS"
+    MINUTES=1
+    while [ $MINUTES -lt 60 ]
+    do
+        echo $MINUTES
+	let MINUTES+=1
+    done
+    let HOURS+=1
 done
