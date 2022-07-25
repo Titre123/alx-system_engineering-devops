@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#display files in a directory without the beginning to "-"
+
+LIST="$(ls *)"
+for item in $LIST
+do
+	echo "$item" | cut -d'-' -f 2
+done

@@ -2,7 +2,7 @@
 #display bad luvk in 4, good luck in 8, Best School in th rest
 
 n=0
-while [ $n -le 10 ]
+while [ $n -lt 10 ]
 do
 	if [ $n -eq 3 ]
 	then

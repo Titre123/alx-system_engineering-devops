@@ -2,13 +2,13 @@
 #display Best school 10 times and "hi" after the ninth time
 
 n=0
-while [ $n -le 10 ]
+while [ $n -lt 10 ]
 do
 	if [ $n -ne 8 ]
 	then
 		echo "Best School"
 	else
-		echo "h1"
+		echo "Hi"
 	fi
 	((n++))
 done
