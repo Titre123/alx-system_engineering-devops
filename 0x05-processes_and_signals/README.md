@@ -3,9 +3,16 @@ Another ALX project
 
 Fiel | Description
  ------------ | ------------- 
-[0x00-shell_basics](https://github.com/Titre123/alx-system_engineering-devops/tree/master/0x00-shell_basics) | This directory include my ALX project on Basic shell scripting
-[0x01-shell_permissions](https://github.com/Titre123/alx-system_engineering-devops/tree/master/0x01-shell_permissions) | This directory include my ALX project on Basic shell scripting and permission 
-[0x02-shell_redirections](https://github.com/Titre123/alx-system_engineering-devops/tree/master/0x02-shell_redirections) | This directory include my ALX project on redirection, pipes in shell
-[0x03-shell_variables_expansions](https://github.com/Titre123/alx-system_engineering-devops/tree/master/0x03-shell_variables_expansions) | This directory include my ALX project variables and arithmetic operation in shell
-[0x04-loops_conditions_and_parsing](https://github.com/Titre123/alx-system_engineering-devops/tree/master/0x04-loops_conditions_and_parsing) | This directory include my ALX project on if/else,case,while,for,unti,awk in bash shell
-[0x05-processes_and_signals](https://github.com/Titre123/alx-system_engineering-devops/tree/master/0x05-processes_and_signals) | This directory include my ALX project on processes and signal
+[0-what-is-my-pid] | This file include my ALX project on process ID
+[1-list_your_processes] | This file include my ALX project on list current working process 
+[2-show_your_bash_pid] | This file include my ALX project to display bash pid
+[3-show_your_bash_pid_made_easy] | This file include my ALX project to display bash pid
+[4-to_infinity_and_beyond] | This file include my ALX project on writing an infinite loop with while
+[5-dont_stop_me_now] | This file include my ALX project on terminating an infinte loop with SIGTERM
+[6-stop_me_if_you_can] | This file include my ALX project on using kill to terminate an infinte loop
+[67-stop_me_if_you_can] | This file include my ALX project on 
+[7-highlander] | This file include my ALX project on 
+[8-beheaded_process] | This file include my ALX project on 
+[100-process_and_pid_file] | This file include my ALX project on 
+[101-manage_my_process] | This file include my ALX project on 
+[manage_my_process] | This file include my ALX project on 
