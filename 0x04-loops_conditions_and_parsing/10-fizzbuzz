@@ -3,7 +3,6 @@
 
 for ((c=0;c < 101; c++))
 do
-	echo "$c"
 	if [ $((c % 5)) -eq 0 ] && [ $((c % 3)) -eq 0 ]
 	then
 		echo "FizzBuzz"
@@ -13,5 +12,7 @@ do
 	elif [ $((c % 3)) -eq 0 ]
 	then
 		echo "Fizz"
+	else
+		echo "$c"
 	fi
 done
