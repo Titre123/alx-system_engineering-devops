@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 #display Best school 10 times and "hi" after the ninth time
 
-n=0
-while [ $n -lt 10 ]
+COUNTER=0
+while [ $COUNTER -lt 11 ]
 do
-	if [ $n -ne 8 ]
-	then
-		echo "Best School"
-	else
-		echo "Hi"
-	fi
-	((n++))
+    if [ $COUNTER = 9 ]
+    then
+        echo "Hi"
+    else
+        echo "Best School"
+    fi
+    ((COUNTER++))
 done
