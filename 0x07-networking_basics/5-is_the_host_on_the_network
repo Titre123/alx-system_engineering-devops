@@ -1,1 +1,4 @@
 #!/usr/bin/env bash
+#pinging a positional argument
+
+ping -c 5 "$1"
