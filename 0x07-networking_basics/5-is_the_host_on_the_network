@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 #pinging a positional argument
 
-
-if ["$1"]
+if ["$1" != ""]
 then
   ping -c 5 "$1"
 else
