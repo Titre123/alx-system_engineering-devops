@@ -1,0 +1,6 @@
+Host ubuntu
+     HostName 3.236.214.82
+     Port 22
+     IdentityFile ~/.ssh/school
+     PasswordAuthentication no
+
