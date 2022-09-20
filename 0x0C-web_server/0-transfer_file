@@ -11,3 +11,4 @@ then
 else
   scp -r "$4" -o StrictHostKeyChecking=no "$1" "$3"@"$2":~/
 fi
+
