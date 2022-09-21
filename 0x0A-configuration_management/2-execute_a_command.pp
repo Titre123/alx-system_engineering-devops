@@ -2,6 +2,5 @@
 exec{ 'kill process':
   command  => 'pkill killmenow',
   path     => ['/usr/bin', '/usr/sbin'],
-  provider => 'shell',
-  require  => './killmenow'
+  provider => 'shell'
 }
