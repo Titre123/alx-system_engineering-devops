@@ -9,5 +9,5 @@ sudo sed -i '/listen server/a         balance roundrobin' /etc/haproxy/haproxy.c
 sudo sed -i '/balance roundrobin/a         bind :80' /etc/haproxy/haproxy.cfg
 sudo sed -i '/bind :80/a         mode http' /etc/haproxy/haproxy.cfg
 sudo sed -i '/mode http/a         server 25904-web-01 3.238.125.126:80 check' /etc/haproxy/haproxy.cfg
-sudo sed -i '/server 652-web-01 35.190.145.187:80 check/a         server 25904-web-02 34.204.195.185:80 check' /etc/haproxy/haproxy.cfg
+sudo sed -i '/server 25904-web-01 3.238.125.126:80 check/a         server 25904-web-02 34.204.195.185:80 check' /etc/haproxy/haproxy.cfg
 sudo service haproxy start
