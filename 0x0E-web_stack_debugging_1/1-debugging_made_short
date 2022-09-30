@@ -2,5 +2,5 @@
 # shorter version
 
 sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
-pkill -i nginx
+pkill -1 nginx
 service nginx start
