@@ -11,7 +11,7 @@ subdomain() {
 		lb_ip=$(dig "lb-01.$1" | grep -A1 'ANSWER SECTION:' | awk 'FNR == 2 {print $5}')
 		web1_ip=$(dig "web-01.$1" | grep -A1 'ANSWER SECTION:' | awk 'FNR == 2 {print $5}')
 		web2_ip=$(dig "web-02.$1" | grep -A1 'ANSWER SECTION:' | awk 'FNR == 2 {print $5}')
-		echo "The subdomain www is a $www_rec record points to $www_ip"
+		echo "The subdomain www is a $www_rec record and points to $www_ip"
 		echo "The subdomain lb-01 is a $lb_rec record and points to $lb_ip"
 		echo "The subdomain web-01 is a $web1_rec record and points to $web1_ip"
 		echo "The subdomain web-02 is a $web2_rec record and points to $web2_ip"
