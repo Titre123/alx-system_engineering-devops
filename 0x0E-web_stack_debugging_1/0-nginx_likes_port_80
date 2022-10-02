@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # bash script to enable container to listen to port 80
 sed -i -e 's/8080/80/g' /etc/nginx/sites-enabled/default
-sudo service nginx start
+service nginx restart
