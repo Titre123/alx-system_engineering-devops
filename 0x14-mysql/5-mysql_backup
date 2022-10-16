@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# backup file for database
+date_now=$(date "+%d-%m-%Y")
+sudo mysqldump -u root -p$1 tyrell_corp > backup.sql
+sudo touch $date_now.tar.gz
+sudo tar -czvf $date_now.tar.gz backup.sql
