@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-# send a get request for an api json and output in a fashioned and more
-# readable format
+''' send a get request for an api json and output in a fashioned and more
+ readable format '''
 
 if __name__ == "__main__":
     import json
@@ -22,7 +22,7 @@ if __name__ == "__main__":
     with urllib.request.urlopen(url_user) as response:
         users = json.loads(response.read().decode('utf-8'))
     for user in users:
-        if user['id'] == no:
+        if user.get('id') == no:
             todo_user = user
     for todo in all_todos:
         if todo['userId'] == no:
