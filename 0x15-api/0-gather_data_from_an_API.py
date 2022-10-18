@@ -9,7 +9,7 @@ if __name__ == "__main__":
     import urllib.request
 
     args = sys.argv
-    no = args[1]
+    no = int(args[1])
     user_todos = []
     todo_user = {}
     completed = 0
