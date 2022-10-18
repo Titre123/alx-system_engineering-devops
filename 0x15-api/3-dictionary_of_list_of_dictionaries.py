@@ -43,4 +43,5 @@ if __name__ == "__main__":
                 }
                 todo_list.append(new_todo)
         array[user['id']] = todo_list
-    print(array)
+    with open('todo_all_employees.json', 'w') as f:
+        json.dump(array, f)
