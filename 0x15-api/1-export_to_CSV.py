@@ -5,7 +5,6 @@
 if __name__ == "__main__":
     import json
     import sys
-    import urllib.parse
     import urllib.request
 
     args = sys.argv
@@ -34,5 +33,5 @@ if __name__ == "__main__":
     #  CSV question 2
     with open('USER_ID.csv', 'w') as f:
         for todo in user_todos:
-            f.write('{},{},{},{}\n'.format(todo_user['id'],
+            f.write('"{}","{}","{}","{}"\n'.format(todo_user['id'],
                     todo_user['username'], todo['completed'], todo['title']))
