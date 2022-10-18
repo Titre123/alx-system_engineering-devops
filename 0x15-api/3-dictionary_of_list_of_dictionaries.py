@@ -9,7 +9,6 @@ if __name__ == "__main__":
     import urllib.request
 
     args = sys.argv
-    no = int(args[1])
     user_todos = []
     todo_user = {}
     completed = 0
@@ -21,15 +20,6 @@ if __name__ == "__main__":
         all_todos = json.loads(the_page.decode('utf-8'))
     with urllib.request.urlopen(url_user) as response:
         users = json.loads(response.read().decode('utf-8'))
-    for user in users:
-        if user.get('id') == no:
-            todo_user = user
-    for todo in all_todos:
-        if todo['userId'] == no:
-            if todo['completed']:
-                completed += 1
-                completed_todos.append(todo)
-            user_todos.append(todo)
 
     # 3 json
     array={}
