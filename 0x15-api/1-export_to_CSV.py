@@ -31,7 +31,7 @@ if __name__ == "__main__":
             user_todos.append(todo)
 
     #  CSV question 2
-    with open('USER_ID.csv', 'w') as f:
+    with open('{}.csv'.format(no), 'w') as f:
         for todo in user_todos:
             f.write('"{}","{}","{}","{}"\n'.format(todo_user['id'],
                     todo_user['username'], todo['completed'], todo['title']))
