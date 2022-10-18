@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-# send a get request for an api json and output in a fashioned and more
-# readable format
+''' send a get request for an api json and output in a fashioned and more
+ readable format '''
 
 if __name__ == "__main__":
     import json
