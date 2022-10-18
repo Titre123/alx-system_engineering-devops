@@ -36,5 +36,5 @@ if __name__ == "__main__":
         return {'task': todo['title'], "completed": todo['completed'],
                 "username": todo_user['username']}
     new_task = list(map(todo, user_todos))
-    with open('2.json', 'w') as f:
+    with open('USER_ID.json', 'w') as f:
         json.dump({todo_user['id']: new_task}, f)
