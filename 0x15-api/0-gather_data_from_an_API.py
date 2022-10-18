@@ -4,9 +4,9 @@
 
 if __name__ == "__main__":
     import json
+    import sys
     import urllib.parse
     import urllib.request
-    import sys
 
     args = sys.argv
     no = args[0]
