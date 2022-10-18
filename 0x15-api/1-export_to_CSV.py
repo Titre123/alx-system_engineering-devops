@@ -4,12 +4,12 @@
 
 if __name__ == "__main__":
     import json
+    import sys
     import urllib.parse
     import urllib.request
-    import sys
 
     args = sys.argv
-    no = args[0]
+    no = int(args[1])
     user_todos = []
     todo_user = {}
     completed = 0
@@ -22,7 +22,7 @@ if __name__ == "__main__":
     with urllib.request.urlopen(url_user) as response:
         users = json.loads(response.read().decode('utf-8'))
     for user in users:
-        if user['id'] == no:
+        if user.get('id') == no:
             todo_user = user
     for todo in all_todos:
         if todo['userId'] == no:
