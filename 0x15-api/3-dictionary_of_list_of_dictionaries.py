@@ -22,15 +22,14 @@ if __name__ == "__main__":
         users = json.loads(response.read().decode('utf-8'))
 
     # 3 json
-    array={}
+    array = {}
     for user in users:
         todo_list = []
         for todo in all_todos:
             if todo['userId'] == user['id']:
                 new_todo = {'username': user['username'],
-                    'task': todo['title'],
-                    'completed': todo['completed']
-                }
+                            'task': todo['title'],
+                            'completed': todo['completed']}
                 todo_list.append(new_todo)
         array[user['id']] = todo_list
     with open('todo_all_employees.json', 'w') as f:
