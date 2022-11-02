@@ -3,7 +3,10 @@
 Query the Reddit API and return the top 10 post for a given subreddit
 """
 
-def number_of_subscribers(subreddit):
+
+import requests
+
+def top_ten(subreddit):
     r = requests.get('https://www.reddit.com/r/{}/hot.json?limit=10'.
                      format(subreddit),
                      headers={'User-Agent': 'custom'},
