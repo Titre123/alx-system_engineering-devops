@@ -7,12 +7,7 @@ articles for a given subreddit match with word_list
 import requests
 
 
-def count_words(subreddit, word_list):
-    """
-    Query the Reddit API and return a list containing the titles of all hot
-    articles for a given subreddit
-    """
-    def recurse(subreddit, hot_list=[], after=''):
+def recurse(subreddit, hot_list=[], after=''):
     """
     Query the Reddit API and return a list containing the titles of all hot
     articles for a given subreddit
@@ -30,6 +25,13 @@ def count_words(subreddit, word_list):
         return hot_list
     else:
         return None
+
+
+def count_words(subreddit, word_list):
+    """
+    Query the Reddit API and return a list containing the titles of all hot
+    articles for a given subreddit
+    """
     x = []
     y = {}
     list = recurse(subreddit)
