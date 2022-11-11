@@ -1,7 +1,8 @@
 # puppet file to fix multiple request problem
 
 exec { 'fix--for-nginx':
-  command   => 'sed -i 's/15/4096/' /etc/default/nginx',
+  $comm = 's/15/4096/'
+  command   => "sed -i $comm /etc/default/nginx",
   provider  => shell,
 }
 
