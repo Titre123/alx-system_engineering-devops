@@ -10,3 +10,4 @@ exec { 'restart nginx':
   require   => Exec['fix--for-nginx'],
   provider  => shell,
 }
+
